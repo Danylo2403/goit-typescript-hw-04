@@ -1,3 +1,5 @@
+import React, {useReducer} from "react";
+
 // Опишіть тип RequestStep
 type RequestStep = "idle" | "start" | "pending" | "finished";
 
@@ -15,7 +17,7 @@ type Action =
   | { type: "RESET_REQUEST" };
 
 // Використовуйте ці типи в компоненті
-import React, { useReducer } from "react";
+
 
 const initialState: State = {
   isRequestInProgress: false,
